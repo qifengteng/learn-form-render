@@ -10,6 +10,8 @@
     "dependencies": {
         "core-js": "^3.6.5",
         "element-ui": "^2.15.14",
+        "prettier": "^3.2.5",
+        "stylelint": "^16.2.1",
         "vue": "^2.6.11"
     },
     "devDependencies": {
@@ -50,13 +52,6 @@
         "commitizen": {
             "path": "cz-customizable"
         }
-    },
-    "lint-staged": {
-        "*.{scss,vue}": [
-        ],
-        "*.{js,ts,vue}": [
-            "vue-cli-service lint"
-        ]
     },
     "gitHooks": {
         "pre-commit": "lint-staged",
